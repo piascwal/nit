@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nit-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/nit/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=nit
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
